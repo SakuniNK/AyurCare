@@ -1,0 +1,274 @@
+.nav{
+    background-color: #9EB384;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appointment-form-section{
+    align-items: center;
+    background-color: #FAF1E4 !important;
+}
+
+.form-container {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: #CEDEBD;
+
+}
+
+.form-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #435334;
+}
+
+/* Form */
+.form-content{
+    width: 50%;
+    border-radius: 20px;
+    z-index: 0;
+}
+.form-content label {
+    margin: 0 0 16px 0;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    letter-spacing: .7px;
+    color: #435334;
+}
+.form-content label::before {
+    content: "<>";
+    color: red;
+    padding: 0 4px 0 0;
+}
+.form-content label :is(input, select) {
+    width: 100%;
+    margin: 8px 0;
+    padding: 0 12px;
+    display: block;
+    height: 40px;
+    color: #435334;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #9EB384;
+    outline: transparent;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .7px;
+
+
+}
+/* Success Message */
+.success-message {
+    margin: 20px 0 0 0;
+    color: green;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    letter-spacing: .7px;
+    line-height: 1.7rem;
+}
+/* Error Message */
+.error-message {
+    color: red;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    letter-spacing: .7px;
+    line-height: 1.7rem;
+}
+.text-appointment-btn {
+    padding: 14px 20px;
+    color: #FAF1E4;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #435334;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all .4s ease;
+    margin-top: 15px;
+
+}
+
+.text-appointment-btn:disabled {
+  background-color: #CEDEBD;
+  cursor: not-allowed;
+  border: 1px solid #435334;
+}
+
+.appointment-btn:hover {
+    color: #1A8EFD;
+    background-color: transparent;
+    border: 1px solid #CEDEBD;
+}
+
+.back-button {
+    margin-right: 10px; /* To add some space between the back button and confirm button */
+  }
+
+.button-container{
+    /* width: 50vw;
+    display: flex;
+    justify-content: center; */
+    display: flex;
+  justify-content: center;
+  gap: 10px; /* Optional, to add some space between buttons */
+}
+
+/* Spinner Styles */
+.spinner {
+    border: 12px solid #CEDEBD; /* Light grey */
+    border-top: 12px solid #435334; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    top: 50%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.my_appoinment_modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+}
+
+.my_appoinment_modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_appoinment_modal-header h2 {
+    margin: 0;
+}
+
+.my_appoinment_modal-body {
+    margin-top: 10px;
+}
+
+.my_appoinment_selected-options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.my_appoinment_selected-option {
+    background-color: #9EB384;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.my_appoinment_scrollable-options {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.my_appoinment_scrollable-options div {
+    margin-bottom: 10px;
+}
+
+.my_appoinment_option-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.my_appoinment_checkbox {
+    margin-right: 10px;
+}
+
+.my_appoinment_checkbox-label {
+    font-size: 14px;
+}
+
+.my_appoinment_search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.my_appoinment_modal-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: rgb(156, 4, 4);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.my_appoinment_modal-button:hover {
+    background-color: rgb(109, 5, 5);
+}
+
+.my_appoinment_modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.my_appoinment_done-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.my_appoinment_done-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 24px;
+    }
+    .form-title {
+        font-size: 24px;
+    }
+    .form-content label {
+        font-size: 18px;
+    }
+    .form-content label :is(input, select) {
+        font-size: 16px;
+    }
+    .success-message {
+        margin: 12px 0 0 0;
+        font-size: 18px;
+    }
+}

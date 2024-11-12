@@ -1,0 +1,59 @@
+.table-container {
+    width: 80%; /* Make the table smaller */
+    margin: 20px auto;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure rounded corners */
+    backdrop-filter: blur(10px); /* Glass-like effect */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    color: #333; /* Text color */
+}
+
+.custom-table th, .custom-table td {
+    padding: 12px 15px;
+    backdrop-filter: blur(10px); /* Glass-like effect for cells */
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle;
+}
+
+.custom-table thead tr {
+    background-color: rgba(67, 83, 52, 0.8);
+    color: white;
+    font-weight: bold;
+}
+
+.custom-table tbody tr {
+    border-bottom: 1px solid #CEDEBD;
+}
+
+.custom-table tbody tr:nth-of-type(even) {
+    background-color: rgba(206, 222, 189, 0.3); /* Slight transparency */
+}
+
+.custom-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgba(67, 83, 52, 0.8);
+}
+
+.prescription-image {
+    width: 120px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners */
+    display: block; /* Optional: make it a block element */
+    margin: 0 auto; /* Center the image */
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Existing styles ... */
